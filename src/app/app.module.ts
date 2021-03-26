@@ -5,17 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
-
+import{ HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component'
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

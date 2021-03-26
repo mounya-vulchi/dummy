@@ -80,11 +80,11 @@
 
         <div class="col-12">
             <label for="inputZip" class="form-label">Add photo here</label>
-            <input type="file"class="form-control" name="photo" placeholder="Upload file" >     
+            <input type="file" class="form-control" (change)="incomingfile($event)" name="photo" accept='image/*' placeholder="Upload profile photo here">    
         </div>
         <div class="col-12 mt-3 text-center">
             <button type="submit" class="btn btn-success text-white" style="font-size: 25px;">Register</button>
-            <span>Already existed user? login here <a routerLink="login" (click)="login()">login</a> </span>
+            <span>Already existed user? login here <a routerLink="login" >login</a> </span>
         </div>
     </form>
 </div>
